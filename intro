@@ -1,0 +1,11 @@
+var express = require("express"); // requires express and puts it in a variable
+
+var app = express(); // calls the express builtin method.
+
+app.get("/", function(request, response) {  // sends hello world
+  response.send("Hello world!");
+});
+
+app.listen(3000, function() { // express server on port 3000 and also logs
+  console.log("Express app started on port 3000.");
+});
