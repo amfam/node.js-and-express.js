@@ -1,0 +1,11 @@
+/*
+If you save this as urltest.js, you can run it in cmd  with node url-test.js. It will print the
+protocol, host, and query of the example URL.
+** require("url") returns an object that has the parse function
+attached. Then you can use it as you would any object!
+*/
+var url = require("url");
+var parsedURL = url.parse("http://www.example.com/? profile?name=barry");
+console.log(parsedURL.protocol); // "http:"
+console.log(parsedURL.host); // "www.example.com"
+console.log(parsedURL.query);//%20profile?name=barry
