@@ -1,0 +1,6 @@
+var fs = require("fs");
+vra options = { encoding: "utf-8" };
+fs.readFile("myfile.txt", options, function(err, data) {
+// …
+});
+console.log("Hello world!"); //Since nodejs is asynchronous , hello world will print while its reading the file. 
